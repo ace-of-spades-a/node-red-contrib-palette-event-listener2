@@ -18,6 +18,10 @@
     "email": "ayush.panchal.3295@gmail.com"
   },
   "license": "MIT",
+  "dependencies": {
+    "node-red": "^3.0.0",
+    "node": ">=14.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ace-of-spades-a/node-red-contrib-palette-event-listener.git"
