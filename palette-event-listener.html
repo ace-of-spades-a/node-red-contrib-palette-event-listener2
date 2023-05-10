@@ -1,0 +1,57 @@
+<script type="text/javascript">
+    RED.nodes.registerType('palette-event-listener', {
+        category : 'utility',
+        color : '#98D8AA',
+        defaults: {
+            name: {value: ""},
+            packageName: {value: ""},
+            operation: {value: "install"}
+        },
+        inputs : 1,
+        outputs : 2,
+        icon: "font-awesome/fa-gear",
+        label: function(){
+            return this.name||"palette-event-listener";
+        },
+        oneditprepare: function () {
+            var node = this;
+            var packageInput = $("#node-input-packageName");
+            var operationSelect = $("#node-input-operation");
+            packageInput.val(node.packageName);
+            operationSelect.val(node.operation);
+        },
+        oneditsave: function () {
+            var node = this;
+            node.packageName = $("#node-input-packageName").val();
+            node.operation = $("#node-input-operation").val();
+        },
+        oneditcancel: function () {
+            var node = this;
+            node.packageName = node._def.defaults.packageName.value;
+            node.operation = node._def.defaults.operation.value;
+        }
+    })
+</script>
+
+<script type="text/html" data-template-name="palette-event-listener">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-packageName"><i class="fa fa-cube"></i> Package Name</label>
+        <input type="text" id="node-input-packageName" placeholder="Enter package name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-operation"><i class="fa fa-gear"></i> Operation</label>
+        <select id="node-input-operation">
+            <option value="install">Install</option>
+            <option value="remove">Remove</option>
+        </select>
+    </div>
+    
+</script>
+
+<script type="text/html" data-help-name="palette-event-listener">
+    <p>Listen to the palette event (nodes:add)</p>
+</script>
