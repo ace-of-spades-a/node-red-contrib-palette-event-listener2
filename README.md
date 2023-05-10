@@ -4,10 +4,10 @@ This is a custom node for Node-RED which listens to the events of any installati
 
 ## Installation
 
-To install `node-red-contrib-pallete-event-listener`, run the following command in your Node-RED user directory (typically `~/.node-red`):
+To install `node-red-contrib-pallete-event-listener2`, run the following command in your Node-RED user directory (typically `~/.node-red`):
 
 ```
-npm install node-red-contrib-pallete-event-listener
+npm install node-red-contrib-pallete-event-listener2
 ```
 
 ## Usage
