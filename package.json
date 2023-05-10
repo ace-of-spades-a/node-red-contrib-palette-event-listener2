@@ -2,14 +2,28 @@
   "name": "node-red-contrib-pallete-event-listener",
   "version": "1.0.0",
   "description": "Node to listen for the pallete events.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "node-red": {
     "nodes": {
       "palette-event-listener": "palette-event-listener.js"
     }
   },
-  "author": "Ayush P",
-  "license": "ISC"
+  "keywords": [
+    "node-red",
+    "palette-event-listener",
+    "event-listener",
+    "node"
+  ],
+  "author": {
+    "name": "Ayush P",
+    "email": "ayush.panchal.3295@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ace-of-spades-a/node-red-contrib-palette-event-listener.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ace-of-spades-a/node-red-contrib-palette-event-listener/issues"
+  },
+  "homepage": "https://github.com/ace-of-spades-a/node-red-contrib-palette-event-listener"
 }
